@@ -1,1025 +1,1228 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OFA168 | FREE20 + 168% Deposit Bonus</title>
 
-  <title>OFA168 - A Trusted Gaming Platform</title>
-  <meta name="description"
-    content="Enjoy a wide variety of exciting gameplay options. Easy to get started and endless fun. Choose from multiple modes and enjoy a truly unique interactive experience.">
-
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="🔥 FREE RM58 + 100% BONUS – Join OFA168 Now">
-<meta property="og:description" content="Register now and claim FREE RM58 + up to 100% deposit bonus. Limited time only!">
-<meta property="og:image" content="https://ofa288.com/ads-banner.jpg">
+  <!-- OG -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="OFA168 | FREE20 + 168% Deposit Bonus" />
+  <meta
+    property="og:description"
+    content="Register now and claim FREE20 + 168% Deposit Bonus. Limited time offer for new members."
+  />
+  <meta property="og:url" content="https://ofa288.com/" />
+  <meta property="og:image" content="https://ofa288.com/og-image.jpg" />
 
   <style>
-    :root {
-      --gold1: #FFE8A8;
-      --gold2: #FFD24D;
-      --gold3: #D9A514;
-      --line: #06C755;
-      --text: #111827;
-      --muted: #6b7280;
-      --shadow: 0 14px 40px rgba(0, 0, 0, .15);
-      --radius: 18px;
-      --maxw: 1080px;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    * {
-      box-sizing: border-box
+    :root {
+      --bg: #070707;
+      --bg-soft: #111111;
+      --card: rgba(255, 255, 255, 0.04);
+      --gold: #d4af37;
+      --gold-2: #f3d36a;
+      --gold-3: #ffdf88;
+      --text: #ffffff;
+      --muted: #d2d2d2;
+      --line: rgba(212, 175, 55, 0.28);
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      --red: #e01919;
+      --green: #1fa855;
+      --telegram: #249bd7;
     }
 
     body {
-      margin: 0;
-      font-family: system-ui, -apple-system, "Segoe UI";
-      background: #fff;
-      color: var(--text)
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(212,175,55,.15), transparent 25%),
+        radial-gradient(circle at bottom left, rgba(212,175,55,.10), transparent 25%),
+        linear-gradient(180deg, #000000 0%, #0a0a0a 100%);
+      color: var(--text);
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1200px, 92%);
+      margin: 0 auto;
     }
 
     .topbar {
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      background: rgba(0,0,0,0.65);
+      backdrop-filter: blur(10px);
       position: sticky;
       top: 0;
-      height: 64px;
-      background: #fff;
-      border-bottom: 1px solid rgba(217, 165, 20, .18);
-      z-index: 50
+      z-index: 1000;
     }
 
     .topbar-inner {
-      max-width: var(--maxw);
-      height: 100%;
-      margin: 0 auto;
-      padding: 0 16px;
       display: flex;
       align-items: center;
-      justify-content: space-between
+      justify-content: space-between;
+      gap: 16px;
+      padding: 12px 0;
     }
 
-    .brand img {
-      height: 40px
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
     }
 
-    .menuBtn {
-      height: 40px;
-      padding: 0 12px;
+    .logo-image {
+      height: 56px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 0 12px rgba(212,175,55,0.12));
+    }
+
+    .nav-cta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 22px;
       border-radius: 999px;
-      border: 1px solid rgba(217, 165, 20, .35);
-      background: #fff;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      cursor: pointer
+      font-weight: 700;
+      transition: .25s ease;
+      cursor: pointer;
+      border: 1px solid transparent;
     }
 
-    .hamburger {
-      width: 18px;
-      height: 12px;
-      position: relative
+    .btn-primary {
+      background: linear-gradient(90deg, var(--gold), var(--gold-2));
+      color: #000;
+      box-shadow: 0 8px 20px rgba(212,175,55,0.28);
     }
 
-    .hamburger span {
-      position: absolute;
-      left: 0;
-      right: 0;
-      height: 2px;
-      border-radius: 99px;
-      background: linear-gradient(90deg, var(--gold3), var(--gold2))
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(212,175,55,0.35);
     }
 
-    .hamburger span:nth-child(1) {
-      top: 0
+    .btn-outline {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.03);
+      color: #fff;
     }
 
-    .hamburger span:nth-child(2) {
-      top: 5px
+    .btn-outline:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+      transform: translateY(-2px);
     }
 
-    .hamburger span:nth-child(3) {
-      bottom: 0
-    }
-
-    .menuPanel {
-      position: fixed;
-      top: 64px;
-      right: 16px;
-      width: 220px;
-      background: #fff;
-      border: 1px solid rgba(217, 165, 20, .22);
-      border-radius: 14px;
-      box-shadow: var(--shadow);
-      display: none;
-      z-index: 9999
-    }
-
-    .menuPanel a {
-      display: block;
-      padding: 12px 14px;
-      text-decoration: none;
-      color: var(--text);
-      font-weight: 800
-    }
-
-    main {
-      max-width: var(--maxw);
-      margin: 0 auto;
-      padding: 0 16px 120px
-    }
-
-    .carousel {
-      margin-top: 16px;
-      width: 100%;
-      aspect-ratio: 1280/853;
-      overflow: hidden;
+    .hero {
+      padding: 30px 0 26px;
       position: relative;
     }
 
-    .carousel-btn {
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .hero-left {
+      padding: 12px 0;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(212,175,55,0.08);
+      color: var(--gold-2);
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 18px;
+      letter-spacing: .5px;
+    }
+
+    .headline {
+      font-size: clamp(38px, 6vw, 72px);
+      font-weight: 900;
+      line-height: 1.03;
+      margin-bottom: 14px;
+    }
+
+    .headline .gold {
+      color: var(--gold);
+      text-shadow: 0 0 20px rgba(212,175,55,0.15);
+    }
+
+    .subtext {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 640px;
+      margin-bottom: 24px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 22px;
+    }
+
+    .mini-points {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      color: #f1f1f1;
+      font-size: 15px;
+      margin-bottom: 22px;
+    }
+
+    .mini-points span {
+      position: relative;
+      padding-left: 18px;
+    }
+
+    .mini-points span::before {
+      content: "•";
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(0, 0, 0, 0.4);
-      color: white;
-      border: none;
-      width: 44px;
-      height: 44px;
+      left: 0;
+      color: var(--gold);
+      font-size: 18px;
+      top: -1px;
+    }
+
+    .countdown-box {
+      background: linear-gradient(135deg, rgba(224,25,25,.16), rgba(212,175,55,.10));
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 20px;
+      padding: 16px;
+      max-width: 560px;
+      box-shadow: var(--shadow);
+    }
+
+    .countdown-label {
+      font-size: 13px;
+      letter-spacing: 1px;
+      color: #ffb0b0;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .countdown {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .time-box {
+      min-width: 78px;
+      background: rgba(0,0,0,.35);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 16px;
+      padding: 10px 12px;
+      text-align: center;
+    }
+
+    .time-num {
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--gold-3);
+      line-height: 1;
+    }
+
+    .time-text {
+      font-size: 12px;
+      color: #ddd;
+      margin-top: 6px;
+      text-transform: uppercase;
+      letter-spacing: .8px;
+    }
+
+    .hero-right {
+      position: relative;
+    }
+
+    .hero-card {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      box-shadow: var(--shadow);
+    }
+
+    .hero-image {
+      width: 100%;
+      display: block;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      background: #111;
+    }
+
+    .offer-strip {
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      bottom: 18px;
+      background: rgba(0,0,0,0.72);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 16px;
+      backdrop-filter: blur(8px);
+    }
+
+    .offer-strip h3 {
+      font-size: 28px;
+      line-height: 1.1;
+      margin-bottom: 6px;
+      color: var(--gold-2);
+    }
+
+    .offer-strip p {
+      color: #ececec;
+      font-size: 15px;
+    }
+
+    /* 老虎机 */
+    .slot-machine {
+      margin-top: 24px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      padding: 18px;
+      max-width: 560px;
+    }
+
+    .slot-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .slot-title {
+      font-weight: 800;
+      color: var(--gold-2);
+      font-size: 18px;
+    }
+
+    .slot-light {
+      display: flex;
+      gap: 6px;
+    }
+
+    .slot-light span {
+      width: 10px;
+      height: 10px;
       border-radius: 50%;
-      cursor: pointer;
+      background: #533;
+      animation: blink 1s infinite alternate;
+    }
+
+    .slot-light span:nth-child(2) { animation-delay: .2s; }
+    .slot-light span:nth-child(3) { animation-delay: .4s; }
+    .slot-light span:nth-child(4) { animation-delay: .6s; }
+
+    @keyframes blink {
+      from { background: #5b2500; box-shadow: 0 0 0 transparent; }
+      to { background: var(--gold-2); box-shadow: 0 0 12px rgba(243,211,106,.9); }
+    }
+
+    .slot-reels {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .reel {
+      height: 96px;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #f8f8f8, #d8d8d8);
+      color: #000;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 20px;
-      z-index: 10;
-      transition: background 0.3s;
-      padding-bottom: 3px;
-    }
-
-    .carousel-btn:hover {
-      background: rgba(0, 0, 0, 0.7);
-    }
-
-    .carousel-btn.prev {
-      left: 12px;
-    }
-
-    .carousel-btn.next {
-      right: 12px;
-    }
-
-    @media (max-width: 480px) {
-      .carousel-btn {
-        width: 32px;
-        height: 32px;
-        font-size: 14px;
-        padding-bottom: 2px;
-      }
-    }
-
-    .slides {
-      display: flex;
-      height: 100%;
-      transition: .5s
-    }
-
-    .slide {
-      min-width: 100%;
-      height: 100%;
-    }
-
-    .slide a {
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
-
-    .slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      /* ensures whole image is visible without cropping and without weird stretches */
-      display: block;
-    }
-
-    .marquee {
-      margin-top: 14px;
-      overflow: hidden;
-      border: 1px solid rgba(217, 165, 20, .22);
-      border-radius: 14px
-    }
-
-    .marquee-track {
-      display: inline-flex;
-      gap: 26px;
-      padding: 12px 16px;
-      white-space: nowrap;
-      animation: scroll 42s linear infinite
-    }
-
-    .mq-item {
-      display: inline-flex;
-      align-items: center;
-      border: 1px solid rgba(217, 165, 20, .55);
-      border-radius: 999px;
-      padding: 6px 12px;
-      background: rgba(255, 210, 77, .08);
-    }
-
-    .mq-num {
-      color: var(--gold3);
+      font-size: 52px;
       font-weight: 900;
+      border: 3px solid #fff3;
+      box-shadow: inset 0 0 18px rgba(0,0,0,.18);
+      position: relative;
+      overflow: hidden;
     }
 
-    @keyframes scroll {
-      from {
-        transform: translateX(0)
-      }
+    .reel.spin {
+      animation: reelSpin .9s linear infinite;
+    }
 
-      to {
-        transform: translateX(-50%)
-      }
+    @keyframes reelSpin {
+      0% { transform: translateY(0); filter: blur(0px); }
+      25% { transform: translateY(-4px); filter: blur(1px); }
+      50% { transform: translateY(4px); filter: blur(2px); }
+      75% { transform: translateY(-4px); filter: blur(1px); }
+      100% { transform: translateY(0); filter: blur(0px); }
+    }
+
+    .slot-bottom {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .slot-message {
+      color: #e7e7e7;
+      font-size: 14px;
+    }
+
+    .slot-btn {
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-2));
+      color: #000;
+      font-weight: 800;
+      border: none;
+      cursor: pointer;
     }
 
     .section {
-      margin-top: 28px
+      padding: 28px 0;
     }
 
-    .section-head {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 12px
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 18px;
+      font-weight: 800;
     }
 
-    .section-head span {
-      font-weight: 900;
-      color: #8a6b22
+    .section-title span {
+      color: var(--gold);
     }
 
-    .section-head::after {
-      content: "";
-      flex: 1;
-      height: 1px;
-      background: linear-gradient(90deg, var(--gold2), transparent)
-    }
-
-    .section-box {
-      border: 1px solid rgba(217, 165, 20, .22);
-      border-radius: var(--radius);
-      padding: 16px;
-      box-shadow: var(--shadow)
-    }
-
-    .grid {
+    .features {
       display: grid;
-      gap: 14px
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 20px;
     }
 
-    @media(min-width:720px) {
-      .grid {
-        grid-template-columns: 1fr 1fr 1fr
-      }
+    .feature-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 22px 18px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      transition: .25s ease;
     }
 
-    .card {
-      display: flex;
-      gap: 14px;
-      align-items: center
+    .feature-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(212,175,55,0.6);
     }
 
-    .card-media {
-      position: relative;
-      width: 96px;
-      height: 96px;
-      flex: 0 0 auto
+    .feature-icon {
+      width: 58px;
+      height: 58px;
+      margin: 0 auto 14px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 24px;
+      background: linear-gradient(135deg, rgba(212,175,55,0.18), rgba(255,255,255,0.06));
+      border: 1px solid var(--line);
+      color: var(--gold-2);
     }
 
-    .gameHero {
-      width: 140px;
-      height: 140px;
-      object-fit: contain;
-      flex: 0 0 auto;
+    .feature-card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
     }
 
-    .gameMini {
-      position: absolute;
-      top: -6px;
-      right: -6px;
-      width: 32px;
-      height: 32px;
-      background: #fff;
-      border-radius: 8px;
-      padding: 2px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, .25);
-    }
-
-    .gameLogo {
-      width: 72px;
-      height: 72px;
-      object-fit: contain
-    }
-
-    .meta p {
-      margin: 0;
+    .feature-card p {
       color: var(--muted);
-      line-height: 1.5
+      font-size: 14px;
     }
 
-    .offers {
+    .promo-section {
+      margin-top: 8px;
+    }
+
+    .promo-box {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .promo-grid {
       display: grid;
-      gap: 10px
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
     }
 
-    @media(min-width:720px) {
-      .offers {
-        grid-template-columns: 1fr 1fr
-      }
+    .promo-link {
+      display: block;
+      padding: 18px 18px;
+      border-radius: 16px;
+      border: 1px solid rgba(212,175,55,0.22);
+      background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+      color: #fff;
+      font-weight: 700;
+      transition: .25s ease;
     }
 
-    .offer {
-      border: 1px solid rgba(217, 165, 20, .18);
-      border-radius: 14px;
-      padding: 12px;
-      font-weight: 800
+    .promo-link:hover {
+      transform: translateY(-3px);
+      border-color: var(--gold);
+      color: var(--gold-2);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.28);
     }
 
-    .bottombar {
+    .contact-section {
+      padding-top: 34px;
+    }
+
+    .contact-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .contact-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-card h3 {
+      font-size: 24px;
+      margin-bottom: 8px;
+      color: var(--gold);
+    }
+
+    .contact-card p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .contact-btns {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .cta-block {
+      margin-top: 32px;
+      background: linear-gradient(135deg, rgba(212,175,55,0.12), rgba(255,255,255,0.03));
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 30px 22px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .cta-block h2 {
+      font-size: clamp(30px, 4vw, 48px);
+      margin-bottom: 10px;
+    }
+
+    .cta-block h2 span {
+      color: var(--gold);
+    }
+
+    .cta-block p {
+      color: var(--muted);
+      font-size: 17px;
+      margin-bottom: 18px;
+    }
+
+    .footer {
+      margin-top: 34px;
+      padding: 24px 0 70px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      color: #b9b9b9;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .floating-actions {
+      position: fixed;
+      right: 18px;
+      bottom: 86px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 999;
+    }
+
+    .floating-btn {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 24px;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: var(--shadow);
+      transition: .25s ease;
+    }
+
+    .floating-btn:hover {
+      transform: translateY(-3px) scale(1.04);
+    }
+
+    .wa { background: var(--green); }
+    .tg { background: var(--telegram); }
+    .reg { background: linear-gradient(135deg, var(--gold), var(--gold-2)); color: #000; }
+
+    /* 假实时赢奖滚动 */
+    .ticker-wrap {
       position: fixed;
       left: 0;
       right: 0;
       bottom: 0;
-      height: 78px;
-      background: #fff;
-      border-top: 1px solid rgba(217, 165, 20, .18);
-      z-index: 60
+      z-index: 998;
+      background: linear-gradient(90deg, rgba(0,0,0,.96), rgba(25,25,25,.96));
+      border-top: 1px solid rgba(212,175,55,.35);
+      height: 54px;
+      overflow: hidden;
     }
 
-    .bottombar-inner {
-      max-width: var(--maxw);
+    .ticker-track {
+      display: flex;
+      width: max-content;
+      animation: tickerMove 26s linear infinite;
+      align-items: center;
       height: 100%;
-      margin: 0 auto;
-      padding: 10px 16px;
-      display: flex;
-      gap: 10px;
-    }
-
-    .cta {
-      height: 52px;
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 0 18px;
-      font-weight: 900;
-      letter-spacing: .5px;
-      text-decoration: none;
-      user-select: none;
-      -webkit-tap-highlight-color: transparent;
-      transition: transform .12s ease, box-shadow .18s ease, filter .18s ease;
-    }
-
-    .cta.gold {
-      flex: 1;
-      color: #fff;
-      font-size: 22px;
-      position: relative;
-      background: linear-gradient(180deg, var(--gold1), var(--gold2), var(--gold3));
-      animation: breathe 1.8s ease-in-out infinite;
-      justify-content: center;
-    }
-
-    .cta.gold small {
-      position: static;
-      font-size: 13px;
-      color: rgba(255, 255, 255, .9);
-      margin-left: 6px;
-    }
-
-    @keyframes breathe {
-
-      0%,
-      100% {
-        box-shadow: 0 0 0 rgba(255, 210, 77, 0)
-      }
-
-      50% {
-        box-shadow: 0 0 20px rgba(255, 210, 77, .65)
-      }
-    }
-
-    .cta.spin-btn {
-      flex: 1;
-      color: #fff;
-      font-size: 18px;
-      position: relative;
-      background: linear-gradient(135deg, #0cebeb, #20e3b2, #29ffc6);
-      background-size: 200% 200%;
-      animation: gradientShift 3s ease infinite, floatBtn 2s ease-in-out infinite;
-      justify-content: center;
-      flex-direction: column;
-      line-height: 1.2;
-      box-shadow: 0 4px 15px rgba(32, 227, 178, 0.4);
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    }
-
-    @keyframes gradientShift {
-      0% {
-        background-position: 0% 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-
-    @keyframes floatBtn {
-      0% {
-        transform: translateY(0px);
-      }
-
-      50% {
-        transform: translateY(-3px);
-      }
-
-      100% {
-        transform: translateY(0px);
-      }
-    }
-
-    body {
-      padding-bottom: 64px;
-    }
-
-
-    .site-footer {
-      width: 100%;
-      text-align: center;
-      font-size: 10px;
-      color: #d6d6d6;
-      padding: 6px 12px 10px;
-      background: #fff;
-      margin-bottom: 6px;
-      ;
-      margin-top: 4px
-    }
-
-
-    /* CTA label inline */
-    .bottom-bar .btn-primary,
-    .bottom-bar a.primary,
-    .bottom-bar button.primary,
-    .bottom-bar .primary-btn,
-    .bottom-bar a,
-    .bottom-bar button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
       white-space: nowrap;
     }
 
-    .bottom-bar span {
-      display: inline;
-      line-height: 1;
-    }
-
-
-
-    /* tighten gap between offers and footer */
-    .offers-section {
-      padding-bottom: 6px;
-    }
-
-    .offers-section .section-box {
-      margin-bottom: 0;
-    }
-
-
-    .cta {
-      height: 52px;
-      border-radius: 16px;
-      display: flex;
+    .ticker-item {
+      display: inline-flex;
       align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 0 18px;
-      font-weight: 900;
-      letter-spacing: .5px;
-      text-decoration: none;
-      user-select: none;
-      -webkit-tap-highlight-color: transparent;
-      transition: transform .12s ease, box-shadow .18s ease, filter .18s ease;
-    }
-
-
-
-    .cta:active {
-      transform: scale(.98)
-    }
-
-    /* ensure transparent areas show white, not black */
-    .carousel,
-    .slides,
-    .slide,
-    .hero,
-    .heroWrap {
-      background: #fff;
-    }
-
-    .slide img {
-      background: transparent;
-    }
-
-
-    /* CTA text: center main + right label */
-    .cta.gold {
-      position: relative;
-    }
-
-    .cta.gold .cta-title {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      color: #000;
-      font-weight: 900;
-    }
-
-    .cta.gold .cta-sub {
-      position: absolute;
-      right: 18px;
-      color: #8b6a2b;
-      font-size: 12px;
-      font-weight: 800;
-    }
-
-
-    /* CTA click feedback + clean text */
-    .cta {
-      cursor: pointer;
-    }
-
-    .cta:active {
-      transform: scale(.98);
-      filter: brightness(.98);
-    }
-
-    .cta.gold:active {
-      filter: brightness(.95);
-      box-shadow: 0 10px 22px rgba(0, 0, 0, .18);
-    }
-
-    .cta.spin-btn:active {
-      filter: brightness(.95);
-      transform: translateY(0) scale(.98);
-      box-shadow: 0 2px 8px rgba(32, 227, 178, 0.6);
-    }
-
-    .cta.gold .cta-title {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      color: #000000;
-      font-weight: 900;
-      text-shadow: none;
-    }
-
-    .cta.gold .cta-sub {
-      position: absolute;
-      right: 18px;
-      color: #8b6a2b;
-      font-size: 12px;
-      font-weight: 800;
-      text-shadow: none;
-    }
-
-    /* Floating Social Icons */
-    .floating-socials {
-      position: fixed;
-      right: 16px;
-      bottom: 96px;
-      /* Above bottom bar */
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      z-index: 100;
-    }
-
-    .social-btn {
-      width: 54px;
-      height: 54px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-      transition: transform 0.2s, box-shadow 0.2s;
+      gap: 10px;
+      padding: 0 26px;
+      font-size: 14px;
       color: #fff;
     }
 
-    .social-btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    .ticker-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #27d16f;
+      box-shadow: 0 0 10px rgba(39,209,111,.7);
+      flex: 0 0 auto;
     }
 
-    .social-btn.wa {
-      background: #25D366;
-      /* WhatsApp green */
+    .ticker-win {
+      color: var(--gold-2);
+      font-weight: 800;
     }
 
-    .social-btn.tg {
-      background: #0088cc;
-      /* Telegram blue */
+    @keyframes tickerMove {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
     }
 
-    .social-btn svg {
-      width: 32px;
-      height: 32px;
-      fill: currentColor;
+    /* 自动弹窗 */
+    .popup-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.72);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+      padding: 18px;
     }
 
-    /* Mobile Optimization */
-    @media (max-width: 480px) {
-      .bottombar {
-        height: 64px;
+    .popup-overlay.show {
+      display: flex;
+    }
+
+    .popup-card {
+      width: min(480px, 100%);
+      background: linear-gradient(180deg, #111, #090909);
+      border: 1px solid rgba(212,175,55,.35);
+      border-radius: 26px;
+      padding: 28px 22px;
+      box-shadow: 0 18px 40px rgba(0,0,0,.45);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .popup-card::before {
+      content: "";
+      position: absolute;
+      inset: -40% auto auto -20%;
+      width: 240px;
+      height: 240px;
+      background: radial-gradient(circle, rgba(212,175,55,.25), transparent 65%);
+      pointer-events: none;
+    }
+
+    .popup-close {
+      position: absolute;
+      right: 14px;
+      top: 12px;
+      width: 36px;
+      height: 36px;
+      border: none;
+      background: rgba(255,255,255,.06);
+      color: #fff;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .popup-badge {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(224,25,25,.18);
+      color: #ffb6b6;
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: .8px;
+      margin-bottom: 12px;
+      border: 1px solid rgba(255,255,255,.08);
+      position: relative;
+      z-index: 1;
+    }
+
+    .popup-title {
+      font-size: 34px;
+      line-height: 1.05;
+      font-weight: 900;
+      margin-bottom: 10px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .popup-title span {
+      color: var(--gold-2);
+    }
+
+    .popup-desc {
+      color: #ddd;
+      font-size: 15px;
+      margin-bottom: 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .popup-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .popup-small {
+      margin-top: 14px;
+      color: #bbb;
+      font-size: 12px;
+      position: relative;
+      z-index: 1;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .contact-wrap,
+      .features,
+      .promo-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-grid,
+      .contact-wrap,
+      .features,
+      .promo-grid {
+        grid-template-columns: 1fr;
       }
 
-      body {
-        padding-bottom: 50px;
+      .topbar-inner {
+        flex-direction: column;
+        align-items: flex-start;
       }
 
-      .bottombar-inner {
-        padding: 6px 10px;
-        gap: 6px;
+      .headline {
+        font-size: 44px;
       }
 
-      .cta {
-        height: 44px;
-        padding: 0 8px;
-        border-radius: 12px;
+      .hero {
+        padding-top: 22px;
       }
 
-      .cta.spin-btn .cta-title {
-        font-size: 13px !important;
+      .offer-strip h3 {
+        font-size: 22px;
       }
 
-      .cta.spin-btn span:last-child {
-        font-size: 9px !important;
-      }
-
-      .cta.gold .cta-title {
-        font-size: 15px !important;
-        position: static;
-        transform: none;
-        white-space: nowrap;
-      }
-
-      .floating-socials {
-        bottom: 74px;
+      .floating-actions {
         right: 12px;
-        gap: 10px;
+        bottom: 78px;
       }
 
-      .social-btn {
-        width: 46px;
+      .logo-image {
         height: 46px;
       }
 
-      .social-btn svg {
-        width: 26px;
-        height: 26px;
-      }
-    }
-
-    @media (max-width: 360px) {
-      .cta.spin-btn .cta-title {
-        font-size: 11px !important;
-        letter-spacing: 0;
+      .time-box {
+        min-width: 68px;
       }
 
-      .cta.gold .cta-title {
-        font-size: 13px !important;
-        letter-spacing: 0;
+      .popup-title {
+        font-size: 28px;
+      }
+
+      .ticker-wrap {
+        height: 50px;
       }
     }
   </style>
-  <link rel="preload" as="image" href="img/photo_6305261232235154639_y.jpg" fetchpriority="high">
 </head>
-
 <body>
 
+  <script>
+    const CONFIG = {
+      registerLink: "https://bang004.ofa168my.net/login?id=register",
+      whatsappNumber: "60107967701",
+      telegramLink: "https://t.me/ofa288",
+      heroImage: "photo_2026-04-21_18-23-41.jpg",
+      logoImage: "img/logo.webp",
+      countdownEnd: "2026-7-31T23:59:59"
+    };
+  </script>
+
   <header class="topbar">
-    <div class="topbar-inner">
-      <div class="brand"><img src="img/logo.webp" alt="OFA168"></div>
-      <button class="menuBtn" id="menuBtn">
-        <div class="hamburger"><span></span><span></span><span></span></div>Menu
-      </button>
+    <div class="container topbar-inner">
+      <div class="logo-wrap">
+        <img id="siteLogo" class="logo-image" src="" alt="OFA168 Logo" />
+      </div>
+
+      <div class="nav-cta">
+        <a id="navRegisterBtn" class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">
+          Register Now
+        </a>
+        <a id="navTelegramBtn" class="btn btn-outline" href="#" target="_blank" rel="noopener noreferrer">
+          Telegram
+        </a>
+      </div>
     </div>
   </header>
 
-  <div class="menuPanel" id="menuPanel">
-    <a href="https://bang004.ofa168my.net/login?id=register" target="_blank">Sign Up Now</a>
-    <a href="https://wheel.ofa889.com/wheel.html" target="_blank">Play Wheel</a>
-    <a href="https://wa.link/kf9ddk" target="_blank">24H Live Support</a>
-    <a href="https://wa.link/kf9ddk" target="_blank">Claim Bonus CS</a>
-    <a href="https://t.me/ofa168vipmsia" target="_blank">VIP Channel</a>
-  </div>
-
   <main>
-    <div class="carousel">
-      <div class="slides" id="slides">
-        <!-- <div class="slide">
-          <a href="https://wa.link/kf9ddk">
-            <img src="img/photo_6188489502477716897_y.jpg" width="1400" height="700" fetchpriority="high"
-              decoding="async" alt="Topup Get Spin">
-          </a>
-        </div> -->
-        <div class="slide">
-          <a href="https://wa.link/kf9ddk">
-            <img src="img/photo_6188489502477716897_y.jpg" width="1400" height="700" fetchpriority="high"
-              decoding="async" alt="Topup Get Spin">
-          </a>
-        </div>
-        <div class="slide">
-          <a href="https://wa.link/kf9ddk">
-            <img src="img/photo_6188489502477716898_y.jpg" width="1400" height="700" fetchpriority="high"
-              decoding="async" alt="Topup Get Spin">
-          </a>
-        </div>
-        <div class="slide">
-          <a href="https://wa.link/kf9ddk">
-            <img src="img/photo_2026-04-20_18-01-56.jpg" width="1400" height="700" fetchpriority="high"
-              decoding="async" alt="Topup Get Spin">
-          </a>
-        </div>
-        <div class="slide">
-          <a href="kf9ddk">
-            <img src="img/3590f648-77ba-4091-932f-7e1e5e5f0d92.jpg" width="1400" height="700" fetchpriority="high"
-              decoding="async" alt="Topup Get Spin">
-          </a>
-        </div>
-        <div class="slide">
-          <a href="kf9ddk">
-            <img src="img/aeaac93d52c0b2ecc8aa28151c2858e2.jpg" width="1400" height="700" fetchpriority="high"
-              decoding="async" alt="Topup Get Spin">
-          </a>
-        </div>
-        <!-- <div class="slide"><img src="img/banner1.webp" width="1400" height="631" loading="lazy" decoding="async">
-        </div>
-        <div class="slide"><img src="img/banner2.webp" width="1400" height="631" loading="lazy" decoding="async">
-        </div>
-        <div class="slide"><img src="img/banner3.webp" width="1400" height="631" loading="lazy" decoding="async">
-        </div> -->
-      </div>
-      <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
-      <button class="carousel-btn next" id="nextBtn">&#10095;</button>
-    </div>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <div class="badge">LIMITED TIME OFFER</div>
 
+          <h1 class="headline">
+            FREE<span class="gold">20</span><br />
+            + <span class="gold">168% Deposit Bonus</span>
+          </h1>
 
-    <div class="marquee">
-      <div class="marquee-track" id="marquee">
-        <span class="mq-item">Congratulations ***0099 received a bonus 【<span class="mq-num">120</span>】</span>
-        <span class="mq-item">Congratulations ***1022 received a bonus 【<span class="mq-num">128</span>】</span>
-        <span class="mq-item">Congratulations ***2534 games winnings 【<span class="mq-num">12,680</span>】</span>
-        <span class="mq-item">Congratulations ***4967 received a bonus 【<span class="mq-num">200</span>】</span>
-        <span class="mq-item">Congratulations ***2984 games winnings 【<span class="mq-num">21,430</span>】</span>
-        <span class="mq-item">Congratulations ***4398 games winnings 【<span class="mq-num">68,975</span>】</span>
-        <span class="mq-item">Congratulations ***2091 received a bonus 【<span class="mq-num">688</span>】</span>
-        <span class="mq-item">Congratulations ***4082 games winnings 【<span class="mq-num">13,740</span>】</span>
-        <span class="mq-item">Congratulations ***0122 games winnings 【<span class="mq-num">36,890</span>】</span>
-        <span class="mq-item">Congratulations ***7897 received a bonus 【<span class="mq-num">88</span>】</span>
-      </div>
-    </div>
+          <p class="subtext">
+            Register today and unlock an exclusive welcome reward.
+            Enjoy slots, live casino, sports betting, and fast support in one place.
+          </p>
 
+          <div class="hero-actions">
+            <a id="heroRegisterBtn" class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">
+              CLAIM BONUS NOW
+            </a>
+            <a id="heroWhatsappBtn" class="btn btn-outline" href="#" target="_blank" rel="noopener noreferrer">
+              WhatsApp Us
+            </a>
+          </div>
 
+          <div class="mini-points">
+            <span>Trusted Platform</span>
+            <span>Fast Withdrawal</span>
+            <span>24/7 Support</span>
+            <span>Mobile Friendly</span>
+          </div>
 
-    <section class="section">
-      <div class="section-head"><span>Popular Picks</span></div>
-      <div class="section-box">
-        <div class="grid">
-
-          <div class="card">
-            <img class="gameHero" src="img/card-live.webp" width="280" height="280" alt="?�人">
-            <div class="meta">
-              <p style="margin:0;color:var(--muted);line-height:1.5;"><img src="img/game-mt-live.webp"
-                  style="height:18px;max-height:18px;width:auto;display:block;margin:0 0 6px 0;"><strong
-                  style="font-weight:900;color:var(--text);">Live Games</strong>-Real-time interaction with full
-                immersion. Smooth gameplay and detailed visuals make you feel like you?�re right at the table.</p>
+          <div class="countdown-box">
+            <div class="countdown-label">OFFER ENDING SOON</div>
+            <div class="countdown" id="countdown">
+              <div class="time-box">
+                <div class="time-num" id="days">00</div>
+                <div class="time-text">Days</div>
+              </div>
+              <div class="time-box">
+                <div class="time-num" id="hours">00</div>
+                <div class="time-text">Hours</div>
+              </div>
+              <div class="time-box">
+                <div class="time-num" id="minutes">00</div>
+                <div class="time-text">Minutes</div>
+              </div>
+              <div class="time-box">
+                <div class="time-num" id="seconds">00</div>
+                <div class="time-text">Seconds</div>
+              </div>
             </div>
           </div>
 
-          <div class="card">
-            <img class="gameHero" src="img/card-elec.webp" width="280" height="280" alt="?��?">
-            <div class="meta">
-              <p style="margin:0;color:var(--muted);line-height:1.5;"><img src="img/game-mt-elec.webp"
-                  style="height:28px;max-height:28px;width:auto;display:block;margin:0 0 6px 0;"><strong
-                  style="font-weight:900;color:var(--text);">Spin Games</strong>-A wide variety of machines to choose
-                from. Smooth transitions, fast-paced wins, and an exciting, lag-free experience.</p>
+          <div class="slot-machine">
+            <div class="slot-top">
+              <div class="slot-title">Lucky Spin Preview</div>
+              <div class="slot-light">
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <div class="slot-reels">
+              <div class="reel spin" id="reel1">7</div>
+              <div class="reel spin" id="reel2">★</div>
+              <div class="reel spin" id="reel3">$</div>
+            </div>
+
+            <div class="slot-bottom">
+              <div class="slot-message" id="slotMessage">Tap spin and try your luck today.</div>
+              <button class="slot-btn" id="spinBtn" type="button">SPIN NOW</button>
             </div>
           </div>
+        </div>
 
-          <div class="card">
-            <img class="gameHero" src="img/card-girl.webp" width="280" height="280" alt="美女?�播�?>
-            <div class="meta">
-              <p style="margin:0;color:var(--muted);line-height:1.5;"><img src="img/game-beauty.webp"
-                  style="height:40px;max-height:40px;width:auto;display:block;margin:0 0 6px 0;"><strong
-                  style="font-weight:900;color:var(--text);">Beauty Live Streaming</strong>-Real-time chat and
-                interaction in a fun, lively atmosphere. Relax, play, and chat with ease.</p>
+        <div class="hero-right">
+          <div class="hero-card">
+            <img id="heroImage" class="hero-image" src="" alt="Main Promotion Banner" />
+            <div class="offer-strip">
+              <h3>New Member Exclusive</h3>
+              <p>Get your FREE20 and enjoy up to 168% deposit bonus today.</p>
             </div>
           </div>
-
         </div>
       </div>
     </section>
 
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Why Choose <span>OFA168</span></h2>
 
+        <div class="features">
+          <div class="feature-card">
+            <div class="feature-icon">🛡️</div>
+            <h3>Trusted Platform</h3>
+            <p>Secure and smooth experience for all players.</p>
+          </div>
 
-   <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Promotions Zone</title>
+          <div class="feature-card">
+            <div class="feature-icon">🎰</div>
+            <h3>1000+ Games</h3>
+            <p>Slots, live casino, fish games, and more.</p>
+          </div>
 
-<style>
-body {
-  font-family: Arial, sans-serif;
-  background: #f2f2f2;
-}
+          <div class="feature-card">
+            <div class="feature-icon">⚽</div>
+            <h3>Sports Betting</h3>
+            <p>Major leagues, live odds, and exciting events.</p>
+          </div>
 
-/* 外框 */
-.section {
-  max-width: 900px;
-  margin: 40px auto;
-}
+          <div class="feature-card">
+            <div class="feature-icon">💬</div>
+            <h3>24/7 Support</h3>
+            <p>Fast response through WhatsApp and Telegram.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-/* 标题 */
-.section-head {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #333;
-}
+    <section class="section promo-section">
+      <div class="container">
+        <h2 class="section-title">Promotions <span>Zone</span></h2>
 
-/* 卡片容器 */
-.section-box {
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 20px;
-  border: 1px solid rgba(212,175,55,0.3);
-}
+        <div class="promo-box">
+          <div class="promo-grid">
+            <a class="promo-link" href="https://bang004.ofa168my.net/promos?id=%E6%89%80%E6%9C%89%E6%B4%BB%E5%8B%95" target="_blank" rel="noopener noreferrer">Register and Get 50 Bonus Credits</a>
+            <a class="promo-link" href="https://bang004.ofa168my.net/promos?id=%E6%89%80%E6%9C%89%E6%B4%BB%E5%8B%95" target="_blank" rel="noopener noreferrer">Slot Starter – Get RM 60 First, RM 100 Next</a>
+            <a class="promo-link" href="https://bang004.ofa168my.net/promos?id=%E6%89%80%E6%9C%89%E6%B4%BB%E5%8B%95" target="_blank" rel="noopener noreferrer">Slot Daily Redeposit – RM 168 Bonus</a>
+            <a class="promo-link" href="https://bang004.ofa168my.net/promos?id=%E6%89%80%E6%9C%89%E6%B4%BB%E5%8B%95" target="_blank" rel="noopener noreferrer">Slot and Live – RM 6,388 Rescue Bonus</a>
+            <a class="promo-link" href="https://bang004.ofa168my.net/promos?id=%E6%89%80%E6%9C%89%E6%B4%BB%E5%8B%95" target="_blank" rel="noopener noreferrer">Live Casino Welcome Bonus – Up to RM 668</a>
+            <a class="promo-link" href="https://bang004.ofa168my.net/promos?id=%E6%89%80%E6%9C%89%E6%B4%BB%E5%8B%95" target="_blank" rel="noopener noreferrer">Sports Betting Deposit Bonus up to 100%</a>
+            <a class="promo-link" href="https://bang004.ofa168my.net/promos?id=%E6%89%80%E6%9C%89%E6%B4%BB%E5%8B%95" target="_blank" rel="noopener noreferrer">Weekend Re-deposit – RM 688 Bonus</a>
+            <a class="promo-link" href="https://bang004.ofa168my.net/promos?id=%E6%89%80%E6%9C%89%E6%B4%BB%E5%8B%95" target="_blank" rel="noopener noreferrer">Unlimited USDT Deposit Rewards</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-/* 网格 */
-.offers {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-}
+    <section class="section contact-section">
+      <div class="container">
+        <div class="contact-wrap">
+          <div class="contact-card">
+            <h3>WhatsApp Support</h3>
+            <p>Need help with registration or promotion details? Contact us directly on WhatsApp.</p>
+            <div class="contact-btns">
+              <a id="whatsappBtn" class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">
+                Chat on WhatsApp
+              </a>
+            </div>
+          </div>
 
-/* 每个按钮 */
-.offer {
-  display: block;
-  padding: 16px 20px;
-  border-radius: 14px;
+          <div class="contact-card">
+            <h3>Telegram Support</h3>
+            <p>Join our Telegram for fast support, updates, and latest promotional info.</p>
+            <div class="contact-btns">
+              <a id="telegramBtn" class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">
+                Open Telegram
+              </a>
+            </div>
+          </div>
+        </div>
 
-  background: linear-gradient(145deg, #f5f5f5, #e6e6e6);
-  border: 1px solid rgba(212,175,55,0.5);
-
-  text-decoration: none; /* ❌ 去掉蓝线 */
-  color: #1a1a1a;
-  font-weight: 600;
-
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-
-  transition: all 0.25s ease;
-}
-
-/* Hover 高级效果 */
-.offer:hover {
-  background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
-  color: #d4af37;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  border: 1px solid #d4af37;
-}
-</style>
-
-</head>
-
-<body>
-
-<section class="section offers-section">
-  <div class="section-head">Promotions Zone</div>
-
-  <div class="section-box">
-    <div class="offers">
-
-      <a href="https://bang004.ofa168my.net/promos?id=%E6%89%80%E6%9C%89%E6%B4%BB%E5%8B%95" target="_blank" class="offer">
-        Register and Get 50 Bonus Credits
-      </a>
-
-      <a href="https://bang004.ofa168my.net/promos?id=%E6%89%80%E6%9C%89%E6%B4%BB%E5%8B%95" target="_blank" class="offer">
-        Slot Starter – Get RM 60 First, RM 100 Next
-      </a>
-
-      <a href="https://bang004.ofa168my.net/promos?id=%E6%89%80%E6%9C%89%E6%B4%BB%E5%8B%95" target="_blank" class="offer">
-        Slot Daily Redeposit – RM 168 Bonus
-      </a>
-
-      <a href="https://bang004.ofa168my.net/promos?id=%E6%89%80%E6%9C%89%E6%B4%BB%E5%8B%95" target="_blank" class="offer">
-        Slot and Live – RM 6,388 Rescue Bonus
-      </a>
-
-      <a href="https://bang00.ofa168my.net/promos?id=%E6%89%80%E6%9C%89%E6%B4%BB%E5%8B%95" target="_blank" class="offer">
-        Live Casino Welcome Bonus – Up to RM 668
-      </a>
-
-      <a href="https://bang004.ofa168my.net/promos?id=%E6%89%80%E6%9C%89%E6%B4%BB%E5%8B%95" target="_blank" class="offer">
-        Sports Betting Deposit Bonus up to 100%
-      </a>
-
-      <a href="https://bang004.ofa168my.net/promos?id=%E6%89%80%E6%9C%89%E6%B4%BB%E5%8B%95" target="_blank" class="offer">
-        Weekend Re-deposit – RM 688 Bonus
-      </a>
-
-      <a href="https://bang004.ofa168my.net/promos?id=%E6%89%80%E6%9C%89%E6%B4%BB%E5%8B%95" target="_blank" class="offer">
-        Unlimited USDT Deposit Rewards
-      </a>
-
-    </div>
-  </div>
-</section>
-
-</body>
-</html>
+        <div class="cta-block">
+          <h2>Ready to Claim <span>FREE20 + 168%</span>?</h2>
+          <p>Tap below and start your journey with our latest new member bonus now.</p>
+          <a id="bottomRegisterBtn" class="btn btn-primary" href="https://bang004.ofa168my.net/login?id=register" target="_blank" rel="noopener noreferrer">
+            REGISTER NOW
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <nav class="bottombar">
-    <div class="bottombar-inner">
-      <a class="cta spin-btn" href="https://wa.link/kf9ddk" target="_blank">
-        <span class="cta-title" style="font-size: 16px; margin-top: 2px;">GET FREE SPIN</span>
-        <span style="font-size: 11px; font-weight: normal; opacity: 0.9;">CONTACT US</span>
-      </a>
-      <a class="cta gold" href="https://bang004.ofa168my.net/login?id=register" target="_blank"><span
-          class="cta-title">Sign Up
-          Now</span></a>
+  <footer class="footer">
+    <div class="container">
+      © 2026 OFA168. All rights reserved.
     </div>
-  </nav>
+  </footer>
 
-  <!-- Floating Social Icons -->
-  <div class="floating-socials">
-    <!-- Telegram -->
-    <a href="https://t.me/ofa288" target="_blank" class="social-btn tg" title="Join Telegram Group">
-      <svg viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M248 8C111.033 8 0 119.033 0 256s111.033 248 248 248 248-111.033 248-248S384.967 8 248 8zm114.952 168.66c-3.732 39.215-19.881 134.378-28.1 178.3-3.476 18.584-10.322 24.816-16.948 25.425-14.4 1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.146-8.612-25.021 5.412-39.517 3.652-3.766 67.12-61.51 68.335-66.746 .153-.655 .3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283 .746-104.608 69.142-14.845 10.194-26.894 9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q .84-6.7 18.45-13.7 108.446-47.248 144.628-62.3c68.872-28.647 83.183-33.623 92.511-33.789 2.052-.034 6.639 .474 9.61 2.885a10.452 10.452 0 0 1 3.53 6.716 43.765 43.765 0 0 1 .417 9.769z" />
-      </svg>
-    </a>
-    <!-- WhatsApp -->
-    <a href="https://wa.link/kf9ddk" target="_blank" class="social-btn wa" title="Contact WhatsApp">
-      <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
-      </svg>
-    </a>
+  <div class="floating-actions">
+    <a id="floatingRegisterBtn" class="floating-btn reg" href="https://bang004.ofa168my.net/login?id=register" target="_blank" rel="noopener noreferrer" title="Register">★</a>
+    <a id="floatingWhatsappBtn" class="floating-btn wa" href="#" target="_blank" rel="noopener noreferrer" title="WhatsApp">✆</a>
+    <a id="floatingTelegramBtn" class="floating-btn tg" href="#" target="_blank" rel="noopener noreferrer" title="Telegram">➤</a>
+  </div>
+
+  <div class="ticker-wrap">
+    <div class="ticker-track" id="tickerTrack">
+      <div class="ticker-item"><span class="ticker-dot"></span> Player A*** just won <span class="ticker-win">RM 1,288</span> in Slots</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Player J*** just won <span class="ticker-win">RM 688</span> in Live Casino</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Player K*** just won <span class="ticker-win">RM 2,180</span> in Sports</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Player M*** just won <span class="ticker-win">RM 980</span> in Slots</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Player R*** just won <span class="ticker-win">RM 1,580</span> in Fish Game</div>
+
+      <div class="ticker-item"><span class="ticker-dot"></span> Player A*** just won <span class="ticker-win">RM 1,288</span> in Slots</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Player J*** just won <span class="ticker-win">RM 688</span> in Live Casino</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Player K*** just won <span class="ticker-win">RM 2,180</span> in Sports</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Player M*** just won <span class="ticker-win">RM 980</span> in Slots</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> Player R*** just won <span class="ticker-win">RM 1,580</span> in Fish Game</div>
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="promoPopup">
+    <div class="popup-card">
+      <button class="popup-close" id="closePopup" type="button">✕</button>
+      <div class="popup-badge">LIMITED TIME BONUS</div>
+      <div class="popup-title">Claim <span>FREE20</span><br>+ 168% Bonus</div>
+      <div class="popup-desc">
+        New member only. Register now before the countdown ends and unlock your welcome reward.
+      </div>
+      <div class="popup-actions">
+        <a id="popupRegisterBtn" class="btn btn-primary" href="https://bang004.ofa168my.net/login?id=register" target="_blank" rel="noopener noreferrer">
+          REGISTER NOW
+        </a>
+        <a id="popupWhatsappBtn" class="btn btn-outline" href="#" target="_blank" rel="noopener noreferrer">
+          WhatsApp
+        </a>
+      </div>
+      <div class="popup-small">Fast support • Easy register • Mobile friendly</div>
+    </div>
   </div>
 
   <script>
-    const btn = document.getElementById('menuBtn');
-    const panel = document.getElementById('menuPanel');
-    btn.onclick = (e) => { e.stopPropagation(); panel.style.display = panel.style.display === 'block' ? 'none' : 'block' };
-    document.onclick = () => panel.style.display = 'none';
+    const registerLink = CONFIG.registerLink;
+    const whatsappLink = `https://wa.me/${CONFIG.whatsappNumber}`;
+    const telegramLink = CONFIG.telegramLink;
 
-    // Carousel logic
-    let currentSlide = 0;
-    const slidesBlock = document.getElementById('slides');
-    const totalSlidesCount = document.querySelectorAll('.slide').length;
-    let slideTimer;
+    document.getElementById("heroImage").src = CONFIG.heroImage;
+    document.getElementById("siteLogo").src = CONFIG.logoImage;
 
-    function moveSlide(idx) {
-      if (idx >= totalSlidesCount) currentSlide = 0;
-      else if (idx < 0) currentSlide = totalSlidesCount - 1;
-      else currentSlide = idx;
-      slidesBlock.style.transform = `translateX(-${currentSlide * 100}%)`;
+    const registerButtons = [
+      "navRegisterBtn",
+      "heroRegisterBtn",
+      "bottomRegisterBtn",
+      "floatingRegisterBtn",
+      "popupRegisterBtn"
+    ];
+
+    registerButtons.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.href = registerLink;
+    });
+
+    document.querySelectorAll(".promo-link").forEach(el => {
+      el.href = registerLink;
+    });
+
+    const whatsappButtons = [
+      "heroWhatsappBtn",
+      "whatsappBtn",
+      "floatingWhatsappBtn",
+      "popupWhatsappBtn"
+    ];
+
+    whatsappButtons.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.href = whatsappLink;
+    });
+
+    const telegramButtons = [
+      "navTelegramBtn",
+      "telegramBtn",
+      "floatingTelegramBtn"
+    ];
+
+    telegramButtons.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.href = telegramLink;
+    });
+
+    // 倒计时
+    function updateCountdown() {
+      const endTime = new Date(CONFIG.countdownEnd).getTime();
+      const now = new Date().getTime();
+      const distance = endTime - now;
+
+      if (distance <= 0) {
+        document.getElementById("days").textContent = "00";
+        document.getElementById("hours").textContent = "00";
+        document.getElementById("minutes").textContent = "00";
+        document.getElementById("seconds").textContent = "00";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((distance / (1000 * 60)) % 60);
+      const seconds = Math.floor((distance / 1000) % 60);
+
+      document.getElementById("days").textContent = String(days).padStart(2, "0");
+      document.getElementById("hours").textContent = String(hours).padStart(2, "0");
+      document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+      document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
     }
 
-    function doNext() { moveSlide(currentSlide + 1); startTimer(); }
-    function doPrev() { moveSlide(currentSlide - 1); startTimer(); }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
 
-    function startTimer() {
-      clearInterval(slideTimer);
-      slideTimer = setInterval(() => { moveSlide(currentSlide + 1); }, 4500);
+    // 自动弹窗
+    const promoPopup = document.getElementById("promoPopup");
+    const closePopup = document.getElementById("closePopup");
+
+    setTimeout(() => {
+      promoPopup.classList.add("show");
+    }, 2500);
+
+    closePopup.addEventListener("click", () => {
+      promoPopup.classList.remove("show");
+    });
+
+    promoPopup.addEventListener("click", (e) => {
+      if (e.target === promoPopup) {
+        promoPopup.classList.remove("show");
+      }
+    });
+
+    // 老虎机动画
+    const reel1 = document.getElementById("reel1");
+    const reel2 = document.getElementById("reel2");
+    const reel3 = document.getElementById("reel3");
+    const spinBtn = document.getElementById("spinBtn");
+    const slotMessage = document.getElementById("slotMessage");
+    const symbols = ["7", "★", "$", "♠", "♥", "♦"];
+
+    function randomSymbol() {
+      return symbols[Math.floor(Math.random() * symbols.length)];
     }
 
-    document.getElementById('nextBtn').onclick = doNext;
-    document.getElementById('prevBtn').onclick = doPrev;
-    startTimer();
+    function startSpin() {
+      [reel1, reel2, reel3].forEach(r => r.classList.add("spin"));
+      slotMessage.textContent = "Spinning... good luck!";
+      spinBtn.disabled = true;
 
-    const m = document.getElementById('marquee'); m.innerHTML += m.innerHTML;
+      const fastSpin = setInterval(() => {
+        reel1.textContent = randomSymbol();
+        reel2.textContent = randomSymbol();
+        reel3.textContent = randomSymbol();
+      }, 90);
+
+      setTimeout(() => { reel1.classList.remove("spin"); reel1.textContent = "7"; }, 1200);
+      setTimeout(() => { reel2.classList.remove("spin"); reel2.textContent = "7"; }, 1700);
+      setTimeout(() => {
+        reel3.classList.remove("spin");
+        reel3.textContent = "7";
+        clearInterval(fastSpin);
+        slotMessage.textContent = "JACKPOT! Register now to claim your bonus.";
+        spinBtn.disabled = false;
+      }, 2200);
+    }
+
+    spinBtn.addEventListener("click", startSpin);
+
+    // 页面载入后自动来一次
+    setTimeout(startSpin, 1200);
+
+    // 假实时赢奖滚动内容轮换
+    const tickerMessages = [
+      "Player A*** just won <span class='ticker-win'>RM 1,288</span> in Slots",
+      "Player J*** just won <span class='ticker-win'>RM 688</span> in Live Casino",
+      "Player K*** just won <span class='ticker-win'>RM 2,180</span> in Sports",
+      "Player M*** just won <span class='ticker-win'>RM 980</span> in Slots",
+      "Player R*** just won <span class='ticker-win'>RM 1,580</span> in Fish Game",
+      "Player T*** just won <span class='ticker-win'>RM 3,288</span> in Slots",
+      "Player C*** just won <span class='ticker-win'>RM 888</span> in Live Casino"
+    ];
+
+    function refreshTicker() {
+      const items = document.querySelectorAll(".ticker-item");
+      items.forEach(item => {
+        const msg = tickerMessages[Math.floor(Math.random() * tickerMessages.length)];
+        item.innerHTML = `<span class="ticker-dot"></span> ${msg}`;
+      });
+    }
+
+    setInterval(refreshTicker, 8000);
   </script>
-
-  <footer
+</body>
+</html>
